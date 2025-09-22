@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anomic dice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+<h1>Anomic dice</h1>
+<div id="dice" aria-live="polite" aria-atomic="true" role="status" title="Dice face">1</div>
+<p class="desc">Rolls a number 1-6</p>
+<p class="next-roll" id="next-roll">Rolling in 60s</p>
+<div class="toolbar">
+<label for="theme-select" class="sr">Theme</label>
+<select id="theme-select" aria-label="Theme">
+<option value="system">System</option>
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+<button id="credits" type="button">Credits</button>
+</div>
+<p class="hint">The dice rolls automatically every 60 seconds and is synced for everyone.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
